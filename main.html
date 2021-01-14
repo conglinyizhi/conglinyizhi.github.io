@@ -50,7 +50,7 @@
             </div>
         </form>
         <div class="center" v-clock>
-            <button v-if="link!" type="button" class="btn btn-primary" @click="query">开始查询</button>
+            <button v-if="!link" type="button" class="btn btn-primary" @click="query">开始查询</button>
             <button v-else type="button" class="btn btn-success" @click="goto">去签字</button>
         </div>
     </div>
